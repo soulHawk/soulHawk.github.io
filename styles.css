@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#card-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    align-items: center;
+    background-color: #F8F9F9;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  color: rgb(57, 53, 53);
+  margin: 15px;
+  position: fixed;
+  bottom: 20px;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F9F9;
+}
+
+
+.happy {
+    font-size: 80px;
+    color: #c7e976;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px lightgray;
+}
+
+.mothers {
+    font-size: 52px;
+    color:#FFC2C3;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px lightgray;
+}
+
+.day {
+    font-size: 120px;
+    color:rgb(245, 230, 95);
+    font-weight: bold;
+    text-shadow: 1px 2px 2px lightgray;
+    padding-bottom: 20px;
+}
+
+#sig-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.love {
+  font-size: 64px;
+  color: #c7e976;
+  font-weight: bold;
+  flex-grow: 1;
+  text-shadow: 1px 2px 2px lightgray;
+  padding-top: 20px;
+}
+
+.tiia {
+  font-size: 64px;
+  color: #c7e976;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px lightgray;
+  flex-grow: 1;
+  visibility: hidden;
+  padding-top: 20px;
+}
+
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    animation: heartbeat 2s infinite;
+    margin:0 auto;
+    visibility: hidden;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: deeppink;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+    #card-container {
+        box-shadow: 2px 2px 7px lightgray;
+        height: 600px;
+        width: 400px;
+    }
+
+}
